@@ -8,7 +8,7 @@ ENV PASSWORD=password
 ENV WG_MTU=1408
 ENV BLOCK_QUIC_443=true
 ENV CLASH_MODE=rule
-
+RUN echo hello
 RUN apk add --no-cache caddy runit jq tor bash \
     && bash /workdir/install.sh \
     && rm /workdir/install.sh \
